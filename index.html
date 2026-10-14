@@ -1,0 +1,425 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>I'm Sorry, Mithu 🤍</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fffaf6;
+    color: #75616a;
+    font-family: Georgia, "Times New Roman", serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Soft pastel background */
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        radial-gradient(circle at 10% 15%, #ffe2e8 0%, transparent 30%),
+        radial-gradient(circle at 90% 80%, #fce8dc 0%, transparent 35%),
+        #fffaf6;
+}
+
+/* Floating decorations */
+.float {
+    position: fixed;
+    bottom: -40px;
+    pointer-events: none;
+    z-index: -1;
+    animation: floatUp linear forwards;
+    opacity: 0;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.65;
+    }
+    80% {
+        opacity: 0.45;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(35deg);
+        opacity: 0;
+    }
+}
+
+.container {
+    max-width: 720px;
+    width: 90%;
+    margin: auto;
+    padding: 55px 0;
+    text-align: center;
+}
+
+/* Intro */
+.tag {
+    display: inline-block;
+    background: #fff0f2;
+    color: #bd8292;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease;
+}
+
+h1 {
+    margin-top: 28px;
+    color: #bd8494;
+    font-size: clamp(35px, 7vw, 58px);
+    font-weight: normal;
+    line-height: 1.3;
+    animation: fadeIn 2s ease;
+}
+
+.subtitle {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #9d858c;
+}
+
+.main-heart {
+    font-size: 48px;
+    margin: 25px 0;
+    display: inline-block;
+    animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.12); }
+}
+
+/* Buttons */
+button {
+    background: #eab8c5;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 15px 30px;
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px #eab8c533;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d99eaf;
+    transform: translateY(-3px);
+}
+
+/* Letter reveal */
+#letter {
+    display: none;
+    margin-top: 40px;
+    animation: appear 1.3s ease;
+}
+
+.letter-card {
+    background: #ffffffcc;
+    border: 1px solid #f4dce2;
+    border-radius: 24px;
+    padding: 38px 32px;
+    text-align: left;
+    box-shadow: 0 12px 40px #eacbd333;
+}
+
+.letter-title {
+    text-align: center;
+    color: #c28a9a;
+    font-size: 29px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.letter-card p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.soft {
+    color: #c18496;
+    font-style: italic;
+}
+
+.decor {
+    text-align: center;
+    color: #e5aebd;
+    font-size: 21px;
+    letter-spacing: 8px;
+    margin: 30px 0;
+}
+
+.signature {
+    text-align: center;
+    color: #c18496;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.9;
+    margin-top: 25px;
+}
+
+/* Final section */
+.closing {
+    margin-top: 35px;
+    background: #fff0f2;
+    border-radius: 18px;
+    padding: 25px 20px;
+    text-align: center;
+    color: #a87e8a;
+    line-height: 1.9;
+}
+
+footer {
+    margin-top: 45px;
+    color: #c7a6af;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 35px 0;
+    }
+
+    .letter-card {
+        padding: 28px 21px;
+    }
+
+    .letter-card p {
+        font-size: 15px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<main class="container">
+
+    <div class="tag">A LITTLE LETTER FOR YOU 🌷</div>
+
+    <h1>I'm Sorry, Mithu 🤍</h1>
+
+    <p class="subtitle">
+        To my Bujjuk Bujjuk,<br>
+        there's something I want to tell you.
+    </p>
+
+    <div class="main-heart">♡</div>
+
+    <br>
+
+    <button id="openButton" onclick="openLetter()">
+        A letter for you 🌸
+    </button>
+
+    <section id="letter">
+
+        <div class="letter-card">
+
+            <h2 class="letter-title">
+                To My Bujjuk Bujjuk 🧸
+            </h2>
+
+            <p>
+                Hey, my Mithu. 🤍
+            </p>
+
+            <p>
+                I know you're angry with me, and I know I've
+                disappointed you. I don't want to act like
+                everything is okay when I know things aren't.
+            </p>
+
+            <p>
+                I'm sorry for the part I've played in making
+                you feel this way. Your feelings matter to me,
+                and I don't want you to feel like they don't.
+            </p>
+
+            <p>
+                I know saying sorry can't undo what happened.
+                I can't expect one little letter to make all
+                your disappointment disappear.
+            </p>
+
+            <p class="soft">
+                But I hope you know that I'm willing to listen,
+                understand, and learn from my mistakes.
+            </p>
+
+            <div class="decor">♡ ✿ ♡</div>
+
+            <p>
+                I miss our little moments, our conversations,
+                our memories, and the happiness we shared.
+                Even the simplest things felt special because
+                they were with you.
+            </p>
+
+            <p>
+                But I don't just want things to go back to
+                normal. I want to understand you better and
+                become someone who shows care through actions,
+                not just beautiful words.
+            </p>
+
+            <p>
+                I'm not asking you to stop being angry or
+                forgive me before you're ready. You can take
+                your time, and I'll respect that.
+            </p>
+
+            <p>
+                You deserve to be heard, understood, and
+                treated with care. I want to do my part in
+                making sure you feel that.
+            </p>
+
+            <div class="decor">🌷 🤍 🌷</div>
+
+            <p>
+                Mithu, you mean a lot to me. I'm sorry that
+                things between us have become difficult.
+                I wish I could make things easier, but I know
+                that rebuilding trust takes time.
+            </p>
+
+            <p>
+                So, instead of making a hundred promises,
+                I want to start by listening to you and
+                showing you that I'm trying.
+            </p>
+
+            <p class="soft" style="text-align:center;">
+                I'm sorry for disappointing you, my love. 🤍
+            </p>
+
+            <div class="signature">
+                Always in my heart,<br>
+                Yours ❤️‍🩹
+            </div>
+
+        </div>
+
+        <div class="closing">
+            <div style="font-size:28px; margin-bottom:10px;">
+                🌸
+            </div>
+
+            You don't have to reply to this letter
+            right away, and you don't have to pretend
+            everything is okay.
+
+            <br><br>
+
+            I just wanted you to know that I'm sorry
+            and that I'm willing to do better. 🤍
+        </div>
+
+    </section>
+
+    <footer>
+        MADE WITH A LITTLE LOVE & A LOT OF SINCERITY ♡
+    </footer>
+
+</main>
+
+<script>
+function openLetter() {
+    const letter = document.getElementById("letter");
+    const button = document.getElementById("openButton");
+
+    letter.style.display = "block";
+    button.style.display = "none";
+
+    setTimeout(() => {
+        letter.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }, 100);
+}
+
+function createFloatingDecoration() {
+    const decoration = document.createElement("div");
+
+    decoration.className = "float";
+
+    const symbols = ["♡", "🤍", "🌸", "✿", "♥"];
+    decoration.textContent =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+    decoration.style.left = Math.random() * 100 + "vw";
+    decoration.style.fontSize =
+        (14 + Math.random() * 14) + "px";
+
+    decoration.style.animationDuration =
+        (9 + Math.random() * 7) + "s";
+
+    document.body.appendChild(decoration);
+
+    setTimeout(() => {
+        decoration.remove();
+    }, 17000);
+}
+
+setInterval(createFloatingDecoration, 1400);
+</script>
+
+</body>
+</html>
+```
